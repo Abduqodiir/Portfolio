@@ -14,7 +14,9 @@
     <!-- --------- FAVICON ---------- -->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
 
-    <title>Portfolio | Ludiflex</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Portfolio | Abduqodir</title>
 </head>
 
 <body>
@@ -46,7 +48,8 @@
                 </ul>
             </div>
             <div class="nav-button">
-                <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                <button id="darkModeToggle" class="btn">Toggle Dark Mode</button>
+                <a href="#contact"><button class="btn">Say Hello<i class="Hello">👋🏻</i></button></a>
             </div>
             <div class="nav-menu-btn">
                 <i class="uil uil-bars" onclick="myMenuFunction()"></i>
@@ -72,7 +75,7 @@
                     </div>
                     <div class="featured-text-btn">
                         <a href="#contact"><button class="btn blue-btn">Hire Me</button><a href="#contact"></a>
-                        <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                            <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
                     </div>
                     <div class="social_icons">
                         <div class="icon"><i class="uil uil-instagram"></i></div>
@@ -176,7 +179,70 @@
                         <label>2+ Years in the field</label>
                     </div>
                 </div>
+
+
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('./public/images/feane.jpg');"></div>
+                        <div class="project-info">
+                            <h2 class="project-title">Feane</h2>
+                            <p class="project-description">This is the first Feane</p>
+                        </div>
+                    </div>
+            
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('./public/images/rentcar.jpg');"></div>
+                        <div class="project-info">
+                            <h2 class="project-title">Rental Car</h2>
+                            <p class="project-description">This is the Rental-Car.</p>
+                        </div>
+                    </div>
+            
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('./public/images/online\ market.jpg');"></div>
+                        <div class="project-info">
+                            <h2 class="project-title">Online Market</h2>
+                            <p class="project-description">iT JUST A Olcha's clone</p>
+                        </div>
+                    </div>             
+                </div>
+
+                <div class="project-grid hidden-projects">
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('./public/images/reciephub.jpg');"></div>
+                        <div class="project-info">
+                            <h2 class="project-title">ReciepHub</h2>
+                            <p class="project-description">This is the ReciepHub.</p>
+                        </div>
+                    </div>
+            
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('project5.jpg');"></div>
+                        <div class="project-info">
+                            <h2 class="project-title">Project Five</h2>
+                            <p class="project-description">This is the fifth project description.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('project5.jpg');"></div>
+                        <div class="project-info">
+                            <h2 class="project-title">Project Five</h2>
+                            <p class="project-description">This is the fifth project description.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="view-more-container">
+                    <a href="#" class="view-more-btn">
+                        <i class="fas fa-arrow-right"></i> 
+                        View More
+                    </a>
+                </div>
+
             </section>
+
+
 
             <!-- -------------- CONTACT BOX ---------------- -->
 
@@ -259,6 +325,14 @@
 
     <!-- ----- MAIN JS ----- -->
     <script src="./script.js"></script>
+
+    <script>
+        const toggleButton = document.getElementById('darkModeToggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+
 </body>
 
 </html>

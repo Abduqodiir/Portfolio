@@ -86,3 +86,23 @@ function scrollActive() {
     })
 }
 window.addEventListener('scroll', scrollActive)
+
+document.addEventListener("DOMContentLoaded", function() {
+    const viewMoreBtn = document.querySelector(".view-more-btn");
+    const hiddenProjects = document.querySelector(".hidden-projects");
+    
+    viewMoreBtn.addEventListener("click", function(event) {
+        event.preventDefault(); // Tugma bosilganda sahifani yangilanishdan to'xtatadi
+        
+        // "open" klassini qo'shish yoki o'chirish
+        if (hiddenProjects.classList.contains("open")) {
+            hiddenProjects.classList.remove("open");
+            viewMoreBtn.innerHTML = '<i class="fas fa-arrow-right"></i> View More'; // Tugma matnini o'zgartirish
+            // #projects bo'limiga o'tish
+            document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' });
+        } else {
+            hiddenProjects.classList.add("open");
+            viewMoreBtn.innerHTML = '<i class="fas fa-arrow-up"></i> View Less'; // Tugma matnini o'zgartirish
+        }
+    });
+});
