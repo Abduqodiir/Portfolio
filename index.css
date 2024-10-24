@@ -830,9 +830,18 @@ footer {
         padding: 0.5rem;
     }
 
-    .project-image {
+    /* .project-image {
         height: 120px;
+    } */
+
+    .project-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
+
+    .project-image {
+        height: 150px;
+    }
+
 
 
 }
@@ -857,5 +866,13 @@ footer {
 
     .input-field {
         width: 100%;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-image {
+        height: 120px;
     }
 }
