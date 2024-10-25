@@ -54,9 +54,32 @@
                 </ul>
             </div>
             <div class="nav-button">
-                <button id="darkModeToggle" class="btn">Toggle Dark Mode</button>
-                <a href="#contact"><button class="btn-hello">Say Hello<i class="Hello">👋🏻</i></button></a>
+                <!-- Dark Mode Toggle -->
+                <label class="theme-switch">
+                    <input type="checkbox" id="darkModeToggle" class="theme-switch__checkbox">
+                    <div class="theme-switch__container">
+                        <div class="theme-switch__clouds"></div>
+                        <div class="theme-switch__stars-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 55" fill="none">
+                                <!-- SVG path here -->
+                            </svg>
+                        </div>
+                        <div class="theme-switch__circle-container">
+                            <div class="theme-switch__sun-moon-container">
+                                <div class="theme-switch__moon">
+                                    <div class="theme-switch__spot"></div>
+                                    <div class="theme-switch__spot"></div>
+                                    <div class="theme-switch__spot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+                <a href="#contact">
+                    <button class="btn-hello">Say Hello<i class="Hello">👋🏻</i></button>
+                </a>
             </div>
+
             <div class="nav-menu-btn">
                 <i class="uil uil-bars" onclick="myMenuFunction()"></i>
             </div>
@@ -115,7 +138,10 @@
                         <div class="about-info">
                             <h3>My introduction</h3>
                             <p>
-                                Hello! I'm Abduqodir, a developer driven by a passion for creativity and meaningful solutions. My goal is to build technology that solves real-world problems while delivering a great user experience. I constantly strive to learn, grow, and stay updated with the latest innovations. Let’s create impactful projects together!
+                                Hello! I'm Abduqodir, a developer driven by a passion for creativity and meaningful
+                                solutions. My goal is to build technology that solves real-world problems while
+                                delivering a great user experience. I constantly strive to learn, grow, and stay updated
+                                with the latest innovations. Let’s create impactful projects together!
                             </p>
                             <div class="about-btn">
                                 <a href="./public/files/Abduqodir - Resume (1).pdf" download>
