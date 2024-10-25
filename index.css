@@ -72,6 +72,21 @@ html {
     margin-left: 10px;
 }
 
+.btn-hello {
+    font-weight: 500;
+    padding: 7px 20px;
+    background: #efefef;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn-hello:hover {
+    background: var(--second-color);
+    color: var(--color-white);
+}
+
 .btn:hover {
     background: var(--second-color);
     color: var(--color-white);
@@ -119,6 +134,17 @@ body.dark-mode i {
     color: #fff; 
 }
 
+body.dark-mode .project-card {
+    background-color: #1c1c1c;
+    color: white;
+}
+
+body.dark-mode .input-field {
+    color: white;
+}
+body.dark-mode .textarea-contact {
+    color: white;
+}
 
 .container {
     width: 100%;
