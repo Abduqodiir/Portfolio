@@ -312,6 +312,9 @@ i {
     font-size: 16px;
 }
 
+
+
+
 /* ------- BASE -------- */
 body {
     background: var(--body-color);
@@ -346,7 +349,14 @@ body.dark-mode footer {
     color: white;
 }
 
+body.dark-mode .icon {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.336);
+}
 
+body.dark-mode .icon:hover{
+    transform: translateY(-7px) rotateX(4deg) rotateY(4deg);
+    box-shadow: 0 10px 20px rgba(248, 247, 247, 0.384), 0 10px 40px rgba(0, 0, 0, 0.2);
+}
 
 
 body.dark-mode i {
@@ -535,13 +545,21 @@ nav {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.185);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-style: preserve-3d;
     cursor: pointer;
+    color: black;
 }
 
 .icon:hover {
-    color: var(--first-color);
+    color: var(--first-color-hover);
+    transform: translateY(-7px) rotateX(4deg) rotateY(4deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 10px 40px rgba(0, 0, 0, 0.2);
 }
+
+
 
 /* ----- FEATURED IMAGE BOX ----- */
 .featured-image {
