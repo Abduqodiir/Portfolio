@@ -31,7 +31,7 @@
         <nav id="header">
             <div class="nav-logo">
                 <p class="nav-name"><a href="#home">Abduqodir</a></p>
-                <span>.</span>
+                <span>.</span>  
             </div>
             <div class="nav-menu" id="myNavMenu">
                 <ul class="nav_menu_list">
@@ -300,9 +300,16 @@
                     <div class="col">
                         <div class="form-control">
                             <div class="form-inputs">
-                                <input type="text" class="input-field" placeholder="Name">
-                                <input type="text" class="input-field" placeholder="Email">
+                                <div class="inputGroup">
+                                    <input type="text" class="input-field" required autocomplete="off">
+                                    <label for="name">Name</label>
+                                </div>
+                                <div class="inputGroup">
+                                    <input type="text" class="input-field" required autocomplete="off">
+                                    <label for="email">Email</label>
+                                </div>
                             </div>
+                            
                             <div class="text-area">
                                 <textarea placeholder="Message" class="textarea-contact"></textarea>
                             </div>

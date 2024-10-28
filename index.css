@@ -697,10 +697,8 @@ h3 {
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    /* Ko'p o'lchamli kartochkalar */
     gap: 20px;
     margin-top: 60px;
-    /* Pastroqqa tushirildi */
 }
 
 .project-card {
@@ -710,6 +708,7 @@ h3 {
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     transform-style: preserve-3d;
+    cursor: pointer;
 }
 
 .project-card:hover {
@@ -719,14 +718,14 @@ h3 {
 
 .project-image {
     width: 100%;
-    height: 150px;
+    height: 200px;
     background-size: cover;
     background-position: center;
     background-image: url('./public/images/reciephub.jpg');
 }
 
 .project-info {
-    padding: 20px;
+    padding: 15px;
 }
 
 .project-title {
@@ -856,6 +855,8 @@ h3 {
     overflow: hidden;
 }
 
+
+
 .contact-info>h2 {
     color: var(--color-white);
     margin-bottom: 20px;
@@ -899,7 +900,7 @@ h3 {
 }
 
 .input-field {
-    width: 50%;
+    width: 100%; /* Kenglikni 100% qilib qo'yish */
     height: 55px;
     background: transparent;
     border: 2px solid #AAA;
@@ -908,12 +909,53 @@ h3 {
     outline: none;
 }
 
+.inputGroup {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 1em 0;
+    max-width: 100%;
+    position: relative;
+    width: 100%; /* Kenglikni 100% qilib qo'yish */
+}
+
+.inputGroup input {
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: transparent;
+    border-radius: 18px;
+    width: 100%; /* Kenglikni 100% qilib qo'yish */
+}
+
+.inputGroup label {
+    font-size: 100%;
+    position: absolute;
+    left: 0;
+    padding: 0.8em;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: rgb(100, 100, 100);
+}
+
+.inputGroup :is(input:focus, input:valid)~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    margin-left: 1.3em;
+    padding: 0.4em;
+    background-color: var(--footer-color);
+}
+
+.inputGroup :is(input:focus, input:valid) {
+    border-color: rgb(150, 150, 200);
+}
+
 textarea {
-    width: 100%;
+    width: 100%; /* Kenglikni 100% qilib qo'yish */
     height: 250px;
     background: transparent;
     border: 2px solid #AAA;
-    border-radius: 10px;
+    border-radius: 18px;
     padding: 15px 20px;
     outline: none;
     resize: none;
@@ -935,6 +977,7 @@ textarea {
     font-size: 18px;
     rotate: -45deg;
 }
+
 
 /* ----- FOOTER BOX ----- */
 footer {
