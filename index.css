@@ -387,13 +387,18 @@ nav {
 
 .nav-logo {
     position: relative;
+    
 }
 
 .nav-name {
     font-size: 30px;
     font-weight: 600;
-    color: var(--text-color-third);
     cursor: pointer;
+}
+
+.nav-name a {
+    color: var(--text-color-third);
+    text-decoration: none;
 }
 
 .nav-logo span {
