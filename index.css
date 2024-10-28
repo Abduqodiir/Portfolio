@@ -343,7 +343,11 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover {
 
 body.dark-mode footer {
     background: #1c1c1c;
+    color: white;
 }
+
+
+
 
 body.dark-mode i {
     color: #fff;
@@ -389,6 +393,7 @@ nav {
     font-size: 30px;
     font-weight: 600;
     color: var(--text-color-third);
+    cursor: pointer;
 }
 
 .nav-logo span {
