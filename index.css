@@ -884,10 +884,10 @@ h3 {
 
 .close-btn {
     position: absolute;
-    top: 15px;
+    top: 1px;
     right: 20px;
-    font-size: 30px;
-    color: #999;
+    font-size: 35px;
+    color: #000000;
     cursor: pointer;
     transition: color 0.3s ease;
 }
@@ -915,6 +915,29 @@ h3 {
 .visit-site-btn:hover {
     background-color: #2980b9;
     transform: translateY(-5px);
+}
+
+.modal-content h2 {
+    margin: 10px 0; /* Sarlavha orasini kengaytirish */
+}
+
+.modal-content p {
+    margin: 10px 0; /* Tavsif orasini kengaytirish */
+}
+
+.features {
+    margin: 10px 0; /* Ko'nikmalar ro'yxati orasini kengaytirish */
+    display: flex; /* Ko'nikmalar ro'yxatini yonma-yon joylashish */
+    justify-content: center; /* Markazga joylashish */
+}
+
+.features span {
+    margin: 0 10px; /* Har bir ko'nikma orasida 10px bo'shliq */
+    font-size: 14px;
+    background: var(--first-color);
+    color: var(--color-white);
+    padding: 2px 10px;
+    border-radius: 5px;/* Orqa fon rangini qo'shish */
 }
 
 /* Animations */
