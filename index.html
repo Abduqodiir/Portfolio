@@ -220,51 +220,50 @@
 
 
                 <div class="project-grid">
-                    <div class="project-card">
+                    <div class="project-card" onclick="openModal('feane')">
                         <div class="project-image" style="background-image: url('./public/images/feane.jpg');"></div>
                         <div class="project-info">
                             <h2 class="project-title">Feane</h2>
                             <p class="project-description">This is the first Feane</p>
                         </div>
                     </div>
-
-                    <div class="project-card">
+                
+                    <div class="project-card" onclick="openModal('rentcar')">
                         <div class="project-image" style="background-image: url('./public/images/rentcar.jpg');"></div>
                         <div class="project-info">
                             <h2 class="project-title">Rental Car</h2>
                             <p class="project-description">This is the Rental-Car.</p>
                         </div>
                     </div>
-
-                    <div class="project-card">
-                        <div class="project-image" style="background-image: url('./public/images/online\ market.jpg');">
-                        </div>
+                
+                    <div class="project-card" onclick="openModal('onlinemarket')">
+                        <div class="project-image" style="background-image: url('./public/images/online market.jpg');"></div>
                         <div class="project-info">
                             <h2 class="project-title">Online Market</h2>
                             <p class="project-description">iT JUST A Olcha's clone</p>
                         </div>
                     </div>
                 </div>
-
+                
+                <!-- Hidden Projects -->
                 <div class="project-grid hidden-projects">
-                    <div class="project-card">
-                        <div class="project-image" style="background-image: url('./public/images/reciephub.jpg');">
-                        </div>
+                    <div class="project-card" onclick="openModal('reciephub')">
+                        <div class="project-image" style="background-image: url('./public/images/reciephub.jpg');"></div>
                         <div class="project-info">
                             <h2 class="project-title">ReciepHub</h2>
                             <p class="project-description">This is the ReciepHub.</p>
                         </div>
                     </div>
-
-                    <div class="project-card">
+                
+                    <div class="project-card" onclick="openModal('tour')">
                         <div class="project-image" style="background-image: url('./public/images/tour.jpg');"></div>
                         <div class="project-info">
                             <h2 class="project-title">Tour</h2>
                             <p class="project-description">This is the Tour website.</p>
                         </div>
                     </div>
-
-                    <div class="project-card">
+                
+                    <div class="project-card" onclick="openModal('projectfive')">
                         <div class="project-image" style="background-image: url('project5.jpg');"></div>
                         <div class="project-info">
                             <h2 class="project-title">Project Five</h2>
@@ -272,6 +271,54 @@
                         </div>
                     </div>
                 </div>
+                
+                <!-- Modal Templates for Projects -->
+                <div id="feane-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-btn" onclick="closeModal('feane')">&times;</span>
+                        <img src="./public/images/feane.jpg" alt="Feane Project Image" class="modal-image">
+                        <h2>Feane</h2>
+                        <p>This is the first Feane project.</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <a href="your_feane_project_link" class="visit-site-btn" target="_blank">Visit Site</a>
+                    </div>
+                </div>
+                
+                <div id="rentcar-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-btn" onclick="closeModal('rentcar')">&times;</span>
+                        <img src="./public/images/rentcar.jpg" alt="Rental Car Project Image" class="modal-image">
+                        <h2>Rental Car</h2>
+                        <p>This is the Rental Car project.</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <a href="your_rentcar_project_link" class="visit-site-btn" target="_blank">Visit Site</a>
+                    </div>
+                </div>
+                
+                <div id="onlinemarket-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-btn" onclick="closeModal('onlinemarket')">&times;</span>
+                        <img src="./public/images/online market.jpg" alt="Online Market Project Image" class="modal-image">
+                        <h2>Online Market</h2>
+                        <p>It's just a clone of Olcha's website.</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <a href="your_online_market_project_link" class="visit-site-btn" target="_blank">Visit Site</a>
+                    </div>
+                </div>
+                
+                
 
                 <div class="view-more-container">
                     <a href="#" class="view-more-btn">
@@ -324,6 +371,8 @@
             </section>
 
         </main>
+
+            
 
 
         <!-- --------------- FOOTER --------------- -->

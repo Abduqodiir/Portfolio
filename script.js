@@ -106,3 +106,14 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+
+function openModal(projectId) {
+    const modal = document.getElementById(`${projectId}-modal`);
+    modal.style.display = 'flex';
+}
+
+function closeModal(projectId) {
+    const modal = document.getElementById(`${projectId}-modal`);
+    modal.style.display = 'none';
+}
