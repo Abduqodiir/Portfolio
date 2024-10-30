@@ -1,12 +1,16 @@
 function myMenuFunction() {
     var menuBtn = document.getElementById("myNavMenu");
+    var icon = document.getElementById("menuIcon");
+    
     if (menuBtn.className === "nav-menu") {
         menuBtn.className += " responsive";
+        icon.className = "fas fa-times";  
     } else {
         menuBtn.className = "nav-menu";
     }
 }
-/* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
+
+
 window.onscroll = function () { headerShadow() };
 function headerShadow() {
     const navHeader = document.getElementById("header");
@@ -92,17 +96,15 @@ document.addEventListener("DOMContentLoaded", function() {
     const hiddenProjects = document.querySelector(".hidden-projects");
     
     viewMoreBtn.addEventListener("click", function(event) {
-        event.preventDefault(); // Tugma bosilganda sahifani yangilanishdan to'xtatadi
+        event.preventDefault();
         
-        // "open" klassini qo'shish yoki o'chirish
         if (hiddenProjects.classList.contains("open")) {
             hiddenProjects.classList.remove("open");
-            viewMoreBtn.innerHTML = '<i class="fas fa-arrow-right"></i> View More'; // Tugma matnini o'zgartirish
-            // #projects bo'limiga o'tish
+            viewMoreBtn.innerHTML = '<i class="fas fa-arrow-right"></i> View More'; 
             document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' });
         } else {
             hiddenProjects.classList.add("open");
-            viewMoreBtn.innerHTML = '<i class="fas fa-arrow-up"></i> View Less'; // Tugma matnini o'zgartirish
+            viewMoreBtn.innerHTML = '<i class="fas fa-arrow-up"></i> View Less';
         }
     });
 });

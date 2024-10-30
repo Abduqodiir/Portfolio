@@ -31,6 +31,7 @@
                 <p class="nav-name"><a href="#home">Abduqodir</a></p>
                 <span>.</span>
             </div>
+            
             <div class="nav-menu" id="myNavMenu">
                 <ul class="nav_menu_list">
                     <li class="nav_list">
@@ -51,6 +52,7 @@
                     </li>
                 </ul>
             </div>
+            
             <div class="nav-button">
                 <!-- Dark Mode Toggle -->
                 <label class="theme-switch">
@@ -77,11 +79,14 @@
                     <button class="btn-hello">Say Hello<i class="Hello">👋🏻</i></button>
                 </a>
             </div>
-
-            <div class="nav-menu-btn">
-                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        
+            <!-- Menyu tugmasi faqat telefon versiyada chiqadi -->
+            <div class="nav-menu-btn" onclick="myMenuFunction()">
+                <i id="menuIcon" class="fas fa-bars"></i> 
             </div>
+            
         </nav>
+        
 
 
         <!-- -------------- MAIN ---------------- -->
