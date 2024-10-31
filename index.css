@@ -335,6 +335,21 @@ body.dark-mode {
     --first-shadow-color: rgba(255, 255, 255, 0.1);
 }
 
+body.dark-mode .modal-content {
+    background-color: black;
+}
+body.dark-mode .modal-content h2{
+    color: white;
+}
+body.dark-mode .modal-content p{
+    color: white;
+}
+
+body.dark-mode .close-btn{
+    color: white;
+}
+
+
 body.dark-mode ::-webkit-scrollbar-thumb {
     background: #444;
 }
