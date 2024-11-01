@@ -1,10 +1,10 @@
 function myMenuFunction() {
     var menuBtn = document.getElementById("myNavMenu");
     var icon = document.getElementById("menuIcon");
-    
+
     if (menuBtn.className === "nav-menu") {
         menuBtn.className += " responsive";
-        icon.className = "fas fa-times";  
+        icon.className = "fas fa-times";
     } else {
         menuBtn.className = "nav-menu";
     }
@@ -91,16 +91,16 @@ function scrollActive() {
 }
 window.addEventListener('scroll', scrollActive)
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const viewMoreBtn = document.querySelector(".view-more-btn");
     const hiddenProjects = document.querySelector(".hidden-projects");
-    
-    viewMoreBtn.addEventListener("click", function(event) {
+
+    viewMoreBtn.addEventListener("click", function (event) {
         event.preventDefault();
-        
+
         if (hiddenProjects.classList.contains("open")) {
             hiddenProjects.classList.remove("open");
-            viewMoreBtn.innerHTML = '<i class="fas fa-arrow-right"></i> View More'; 
+            viewMoreBtn.innerHTML = '<i class="fas fa-arrow-right"></i> View More';
             document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' });
         } else {
             hiddenProjects.classList.add("open");
@@ -119,3 +119,4 @@ function closeModal(projectId) {
     const modal = document.getElementById(`${projectId}-modal`);
     modal.style.display = 'none';
 }
+

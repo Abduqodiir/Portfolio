@@ -449,7 +449,14 @@ nav {
     font-weight: 500;
     padding-inline: 15px;
     margin-inline: 20px;
+    transition: color 0.3s ease; 
 }
+
+.nav-link:hover{
+    color: var(--first-color);
+}
+
+
 
 .nav-menu-btn {
     display: none;
