@@ -338,14 +338,16 @@ body.dark-mode {
 body.dark-mode .modal-content {
     background-color: black;
 }
-body.dark-mode .modal-content h2{
-    color: white;
-}
-body.dark-mode .modal-content p{
+
+body.dark-mode .modal-content h2 {
     color: white;
 }
 
-body.dark-mode .close-btn{
+body.dark-mode .modal-content p {
+    color: white;
+}
+
+body.dark-mode .close-btn {
     color: white;
 }
 
@@ -367,7 +369,7 @@ body.dark-mode .icon {
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.336);
 }
 
-body.dark-mode .icon:hover{
+body.dark-mode .icon:hover {
     transform: translateY(-7px) rotateX(4deg) rotateY(4deg);
     box-shadow: 0 10px 20px rgba(248, 247, 247, 0.384), 0 10px 40px rgba(0, 0, 0, 0.2);
 }
@@ -411,7 +413,7 @@ nav {
 
 .nav-logo {
     position: relative;
-    
+
 }
 
 .nav-name {
@@ -449,10 +451,10 @@ nav {
     font-weight: 500;
     padding-inline: 15px;
     margin-inline: 20px;
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: var(--first-color);
 }
 
@@ -1008,6 +1010,7 @@ h3 {
     color: var(--color-white);
     z-index: 2;
 }
+
 /*  */
 /* Modal Styles */
 .modal.open .modal-content {
@@ -1030,6 +1033,7 @@ h3 {
     z-index: 1000;
     backdrop-filter: blur(5px);
 }
+
 .modal-content {
     background: linear-gradient(135deg, #ffffff, #f0f0f0);
     padding: 40px;
@@ -1050,6 +1054,7 @@ h3 {
         opacity: 0;
         transform: translateY(50px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1184,7 +1189,8 @@ h3 {
 }
 
 .input-field {
-    width: 100%; /* Kenglikni 100% qilib qo'yish */
+    width: 100%;
+    /* Kenglikni 100% qilib qo'yish */
     height: 55px;
     background: transparent;
     border: 2px solid #AAA;
@@ -1198,7 +1204,8 @@ h3 {
     margin: 1em 0;
     max-width: 100%;
     position: relative;
-    width: 100%; /* Kenglikni 100% qilib qo'yish */
+    width: 100%;
+    /* Kenglikni 100% qilib qo'yish */
 }
 
 .inputGroup input {
@@ -1208,7 +1215,8 @@ h3 {
     border: 2px solid rgb(200, 200, 200);
     background-color: transparent;
     border-radius: 18px;
-    width: 100%; /* Kenglikni 100% qilib qo'yish */
+    width: 100%;
+    /* Kenglikni 100% qilib qo'yish */
 }
 
 .inputGroup label {
@@ -1235,7 +1243,8 @@ h3 {
 }
 
 textarea {
-    width: 100%; /* Kenglikni 100% qilib qo'yish */
+    width: 100%;
+    /* Kenglikni 100% qilib qo'yish */
     height: 250px;
     background: transparent;
     border: 2px solid #AAA;
@@ -1330,6 +1339,7 @@ footer {
 
 /* Tablet and smaller laptop responsive design */
 @media only screen and (max-width: 900px) {
+
     /* Navigation */
     .nav-button {
         display: none;
