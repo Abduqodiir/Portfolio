@@ -31,7 +31,7 @@
                 <p class="nav-name"><a href="#home">Abduqodir</a></p>
                 <span>.</span>
             </div>
-            
+
             <div class="nav-menu" id="myNavMenu">
                 <ul class="nav_menu_list">
                     <li class="nav_list">
@@ -40,6 +40,10 @@
                     </li>
                     <li class="nav_list">
                         <a href="#about" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#services" class="nav-link">Services</a>
                         <div class="circle"></div>
                     </li>
                     <li class="nav_list">
@@ -52,7 +56,7 @@
                     </li>
                 </ul>
             </div>
-            
+
             <div class="nav-button">
                 <!-- Dark Mode Toggle -->
                 <label class="theme-switch">
@@ -79,14 +83,14 @@
                     <button class="btn-hello">Say Hello<i class="Hello">👋🏻</i></button>
                 </a>
             </div>
-        
+
             <!-- Menyu tugmasi faqat telefon versiyada chiqadi -->
             <div class="nav-menu-btn" onclick="myMenuFunction()">
-                <i id="menuIcon" class="fas fa-bars"></i> 
+                <i id="menuIcon" class="fas fa-bars"></i>
             </div>
-            
+
         </nav>
-        
+
 
 
         <!-- -------------- MAIN ---------------- -->
@@ -113,10 +117,9 @@
                     </div>
                     <div class="social_icons">
                         <div class="icon"><i class="fa-brands fa-telegram fa-lg"></i></div>
-                        <a href="https://www.linkedin.com/in/abduqodir-yuldashev-2a75a732a/">
+                        <a href="https://www.linkedin.com/in/abduqodiir">
                             <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
                         </a>
-                        <div class="icon"><i class="uil uil-dribbble"></i></div>
                         <a href="https://github.com/Abduqodir65">
                             <div class="icon"><i class="uil uil-github-alt"></i></div>
                         </a>
@@ -201,6 +204,60 @@
                 </div>
             </section>
 
+            <!-- -------------- SERVICES BOX ---------------- -->
+            <section class="section" id="services">
+                <div class="top-header">
+                    <h1>My Services</h1>
+                    <span>Professional solutions for your digital needs</span>
+                </div>
+
+                <div class="services-container">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="uil uil-web-grid"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Creating responsive, modern websites using latest technologies like React, Node.js, and
+                            modern frameworks.</p>
+                        <div class="service-tags">
+                            <span>Frontend</span>
+                            <span>Backend</span>
+                            <span>Fullstack</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="uil uil-palette"></i>
+                        </div>
+                        <h3>UI/UX Design</h3>
+                        <p>Designing intuitive and beautiful user interfaces that provide seamless user experience and
+                            engagement.</p>
+                        <div class="service-tags">
+                            <span>Figma</span>
+                            <span>Adobe XD</span>
+                            <span>Sketch</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="uil uil-mobile-android"></i>
+                        </div>
+                        <h3>Mobile Development</h3>
+                        <p>Building cross-platform mobile applications using modern technologies for iOS and Android
+                            platforms.</p>
+                        <div class="service-tags">
+                            <span>React Native</span>
+                            <span>Flutter</span>
+                            <span>Native Apps</span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </section>
+
             <!-- -------------- PROJECT BOX ---------------- -->
 
             <section class="section" id="projects">
@@ -234,7 +291,7 @@
                             <p class="project-description">This is the first Feane</p>
                         </div>
                     </div>
-                
+
                     <div class="project-card" onclick="openModal('rentcar')">
                         <div class="project-image" style="background-image: url('./public/images/rentcar.jpg');"></div>
                         <div class="project-info">
@@ -242,26 +299,28 @@
                             <p class="project-description">This is the Rental-Car.</p>
                         </div>
                     </div>
-                
+
                     <div class="project-card" onclick="openModal('onlinemarket')">
-                        <div class="project-image" style="background-image: url('./public/images/online market.jpg');"></div>
+                        <div class="project-image" style="background-image: url('./public/images/online market.jpg');">
+                        </div>
                         <div class="project-info">
                             <h2 class="project-title">Online Market</h2>
                             <p class="project-description">iT JUST A Olcha's clone</p>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Hidden Projects -->
                 <div class="project-grid hidden-projects">
                     <div class="project-card" onclick="openModal('reciephub')">
-                        <div class="project-image" style="background-image: url('./public/images/reciephub.jpg');"></div>
+                        <div class="project-image" style="background-image: url('./public/images/reciephub.jpg');">
+                        </div>
                         <div class="project-info">
                             <h2 class="project-title">ReciepHub</h2>
                             <p class="project-description">This is the ReciepHub.</p>
                         </div>
                     </div>
-                
+
                     <div class="project-card" onclick="openModal('tour')">
                         <div class="project-image" style="background-image: url('./public/images/tour.jpg');"></div>
                         <div class="project-info">
@@ -269,7 +328,7 @@
                             <p class="project-description">This is the Tour website.</p>
                         </div>
                     </div>
-                
+
                     <div class="project-card" onclick="openModal('projectfive')">
                         <div class="project-image" style="background-image: url('project5.jpg');"></div>
                         <div class="project-info">
@@ -278,7 +337,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Modal Templates for Projects -->
                 <div id="feane-modal" class="modal">
                     <div class="modal-content">
@@ -294,7 +353,7 @@
                         <a href="your_feane_project_link" class="visit-site-btn" target="_blank">Visit Site</a>
                     </div>
                 </div>
-            
+
                 <!-- Rental Car Modal (Already exists, just enhanced) -->
                 <div id="rentcar-modal" class="modal">
                     <div class="modal-content">
@@ -310,12 +369,13 @@
                         <a href="your_rentcar_project_link" class="visit-site-btn" target="_blank">Visit Site</a>
                     </div>
                 </div>
-            
+
                 <!-- Online Market Modal (Already exists, just enhanced) -->
                 <div id="onlinemarket-modal" class="modal">
                     <div class="modal-content">
                         <span class="close-btn" onclick="closeModal('onlinemarket')">&times;</span>
-                        <img src="./public/images/online market.jpg" alt="Online Market Project Image" class="modal-image">
+                        <img src="./public/images/online market.jpg" alt="Online Market Project Image"
+                            class="modal-image">
                         <h2>Online Market</h2>
                         <p>A comprehensive e-commerce platform inspired by Olcha's design.</p>
                         <div class="features">
@@ -326,7 +386,7 @@
                         <a href="your_online_market_project_link" class="visit-site-btn" target="_blank">Visit Site</a>
                     </div>
                 </div>
-            
+
                 <!-- ReciepHub Modal (New) -->
                 <div id="reciephub-modal" class="modal">
                     <div class="modal-content">
@@ -342,7 +402,7 @@
                         <a href="your_reciephub_project_link" class="visit-site-btn" target="_blank">Visit Site</a>
                     </div>
                 </div>
-            
+
                 <!-- Tour Modal (New) -->
                 <div id="tour-modal" class="modal">
                     <div class="modal-content">
@@ -358,7 +418,7 @@
                         <a href="your_tour_project_link" class="visit-site-btn" target="_blank">Visit Site</a>
                     </div>
                 </div>
-            
+
                 <!-- Project Five Modal (New) -->
                 <div id="projectfive-modal" class="modal">
                     <div class="modal-content">
@@ -427,7 +487,7 @@
 
         </main>
 
-            
+
 
 
         <!-- --------------- FOOTER --------------- -->

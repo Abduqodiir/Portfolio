@@ -710,6 +710,7 @@ h3 {
     background: var(--first-color-hover);
 }
 
+
 /* ----- ABOUT / SKILLS BOX ----- */
 .skills-box {
     margin: 10px;
@@ -732,6 +733,134 @@ h3 {
     padding: 2px 10px;
     border-radius: 5px;
 }
+
+
+
+/* Services Section */
+#services {
+    padding: 80px 0;
+}
+
+.top-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.top-header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    position: relative;
+    display: inline-block;
+}
+
+.top-header h1::after {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 3px;
+    background: linear-gradient(to right, #3498db, #2ecc71);
+    bottom: -10px;
+    left: 15%;
+    border-radius: 5px;
+}
+
+.top-header span {
+    color: #7f8c8d;
+    font-size: 1rem;
+    display: block;
+    margin-top: 15px;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: white;
+    border-radius: 15px;
+    padding: 35px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #3498db, #2ecc71);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    font-size: 50px;
+    background: linear-gradient(45deg, #3498db, #2ecc71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    transform: rotate(10deg);
+}
+
+.service-card h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.service-card p {
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.service-tags {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.service-tags span {
+    background: #ecf0f1;
+    color: #34495e;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.service-tags span:hover {
+    background: #3498db;
+    color: white;
+    transform: scale(1.05);
+}
+
 
 /* ----- PROJECTS BOX ----- */
 
