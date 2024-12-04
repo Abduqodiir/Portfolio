@@ -110,13 +110,24 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-function openModal(projectId) {
-    const modal = document.getElementById(`${projectId}-modal`);
+function openModal(projectName) {
+    const modal = document.getElementById(`${projectName}-modal`);
     modal.style.display = 'flex';
+    setTimeout(() => modal.classList.add('open'), 10);
 }
 
-function closeModal(projectId) {
-    const modal = document.getElementById(`${projectId}-modal`);
-    modal.style.display = 'none';
+function closeModal(projectName) {
+    const modal = document.getElementById(`${projectName}-modal`);
+    modal.classList.remove('open');
+    setTimeout(() => modal.style.display = 'none', 500);
 }
 
+// Close modal when clicking outside
+window.addEventListener('click', function(event) {
+    document.querySelectorAll('.modal').forEach(modal => {
+        if (event.target === modal) {
+            const projectName = modal.id.replace('-modal', '');
+            closeModal(projectName);
+        }
+    });
+});
