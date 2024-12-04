@@ -1342,7 +1342,6 @@ footer {
     }
 }
 
-/* Extra Small Devices */
 @media only screen and (max-width: 375px) {
     .featured-name {
         font-size: 2rem;
