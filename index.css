@@ -1323,20 +1323,24 @@ footer {
     .featured-text {
         padding: 0;
     }
+
     .image,
     .image img {
         width: 320px;
         height: 320px;
     }
 }
+
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
 @media only screen and (max-width: 900px) {
     .nav-button {
         display: none;
     }
+
     .nav-menu.responsive {
         left: 0;
     }
+
     .nav-menu {
         position: fixed;
         top: 80px;
@@ -1351,19 +1355,23 @@ footer {
         height: 90vh;
         transition: .3s;
     }
+
     .nav_menu_list {
         flex-direction: column;
     }
+
     .nav-menu-btn {
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
     .featured-box {
         flex-direction: column;
         justify-content: center;
         height: 100vh;
     }
+
     .featured-text {
         width: 100%;
         order: 2;
@@ -1371,9 +1379,11 @@ footer {
         align-content: flex-start;
         min-height: 60vh;
     }
+
     .social_icons {
         margin-top: 2em;
     }
+
     .featured-image {
         order: 1;
         justify-content: center;
@@ -1381,45 +1391,193 @@ footer {
         width: 100%;
         margin-top: 65px;
     }
+
     .image,
     .image img {
         width: 150px;
         height: 150px;
     }
+
     .row {
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 50px;
     }
+
     .col {
         display: flex;
         justify-content: center;
         width: 100%;
     }
+
     .about-info,
     .contact-info {
         width: 100%;
     }
+
     .project-container {
         justify-content: center;
     }
+
     .project-box {
         width: 80%;
     }
+
+    .project-item {
+        padding: 0.5rem;
+    }
+
+    /* .project-image {
+        height: 120px;
+    } */
+
+    .project-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .project-image {
+        height: 150px;
+    }
+
+
+
 }
-/* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
+
+
 @media only screen and (max-width: 540px) {
+    .wrapper {
+        padding-inline: 5vw;
+    }
+
     .featured-name {
         font-size: 40px;
     }
+
     .project-box {
         width: 100%;
     }
+
     .form-inputs {
         flex-direction: column;
     }
+
     .input-field {
         width: 100%;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-image {
+        height: 120px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .nav-menu {
+        top: 60px;
+        height: 80vh;
+        min-height: 350px;
+    }
+
+    .featured-name {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .featured-text {
+        padding: 0 1rem;
+        font-size: 14px;
+        min-height: 50vh;
+    }
+
+    .image,
+    .image img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .social_icons {
+        margin-top: 1.5em;
+    }
+
+    .row {
+        gap: 30px;
+    }
+
+    .col {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-item {
+        padding: 0.3rem;
+    }
+
+    .project-image {
+        height: 100px;
+    }
+
+    .about-info,
+    .contact-info {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .form-inputs {
+        gap: 10px;
+    }
+
+    .input-field {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .wrapper {
+        padding-inline: 3vw;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .featured-name {
+        font-size: 28px;
+    }
+
+    .featured-text {
+        font-size: 12px;
+    }
+
+    .image,
+    .image img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .project-image {
+        height: 80px;
+    }
+
+    .form-inputs {
+        gap: 8px;
+    }
+
+    .input-field {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .wrapper {
+        padding-inline: 2vw;
+    }
+
+    .social_icons {
+        margin-top: 1em;
     }
 }
