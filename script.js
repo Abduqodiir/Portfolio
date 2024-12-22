@@ -7,8 +7,19 @@ function myMenuFunction() {
         icon.className = "fas fa-times";
     } else {
         menuBtn.className = "nav-menu";
+        icon.className = "fas fa-bars";
     }
 }
+
+// Link bosilganda menyuni yopish
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        var menuBtn = document.getElementById("myNavMenu");
+        var icon = document.getElementById("menuIcon");
+        menuBtn.className = "nav-menu"; // Menyu yopiladi
+        icon.className = "fas fa-bars"; // Ikonka o'zgaradi
+    });
+});
 
 
 window.onscroll = function () { headerShadow() };
